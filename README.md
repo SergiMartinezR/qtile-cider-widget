@@ -2,17 +2,31 @@
 
 - a Qtile widget for viewing and interacting your current Apple Music track
 
+![cider_widget](https://github.com/SergiMartinezR/qtile-cider-widget/assets/82753872/cff7f1d3-0184-4425-8e10-a4f2391fec4f)
 
 | :exclamation:  Disclaimer  |
 |----------------------------|
 
-This is a modified version of [BenGH28/qtile-spotify-widget](https://github.com/BenGH28/qtile-spotify-widget) that's been adapted to work with the Cider app (used to listen to Apple Music).
+This is a modified version of [BenGH28/qtile-spotify-widget](https://github.com/BenGH28/qtile-spotify-widget) that's been adapted to work with the [Cider app](https://github.com/ciderapp/Cider) (used to listen to Apple Music).
+
+**Btw I use the free version of Cider (the one in the Archlinux User Repository).
 
 ## Install
 
 ### Copy the file
 
 - copy the `cider.py` to `~/.config/qtile/` directory. This is the easiest option
+
+### Submodule for the dotfile addicts
+
+- add it as a submodule if you save your dotfiles with git
+
+```sh
+# using yadm (a git wrapper)
+yadm submodule add https://github.com/SergiMartinezR/qtile-cider-widget ~/.config/qtile/cider
+```
+
+Note: You only need to do one of these options to have it on your system
 
 ## In config.py
 
@@ -52,6 +66,8 @@ screens = [
 
 - [Mpris2](https://docs.qtile.org/en/stable/manual/ref/widgets.html#libqtile.widget.Mpris2) a more generic widget using `dbus-next`
 that allows you to display music info from any player (audacious, vlc, etc.).
+
+- The spotify version made by BenGH28 [BenGH28/qtile-spotify-widget](https://github.com/BenGH28/qtile-spotify-widget). 
 
 ## Credits
 
